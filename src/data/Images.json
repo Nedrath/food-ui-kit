@@ -1,0 +1,27 @@
+[
+  {
+    "id": "57-616-9266",
+    "title": "Good Foods",
+    "image": "../img/SplashImage.png"
+  },
+  {
+    "id": "01-208-5918",
+    "title": "Recipe of the day",
+    "image": "../img/recipeOfTheDay.png"
+  },
+  {
+    "id": "37-356-7542",
+    "title": "Sandwich",
+    "image": "../img/Sandwich.png"
+  },
+  {
+    "id": "56-046-9540",
+    "title": "Snack",
+    "image": "../img/Snack.png"
+  },
+  {
+    "id": "59-113-4434",
+    "title": "Dessert",
+    "image": "../img/Dessert.png"
+  }
+]

@@ -5,13 +5,11 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   const style_Grid = css`
-    background: black;
+    /* background: black; */
   `
   return (
     <div className={style_Grid}>
-      <Header />
-      <Nav />
-      <Footer />
+     <h1>hej</h1>
     </div>
   );
 };
