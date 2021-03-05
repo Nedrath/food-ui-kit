@@ -3,7 +3,7 @@
     "*.js": "javascriptreact"
   },
   "files.exclude": {
-   ".cache": true,
+    ".cache": true,
     "node_modules": true,
     "dist": false
     // "eslintrc.json":true,
