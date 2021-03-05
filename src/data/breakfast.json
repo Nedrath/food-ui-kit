@@ -1,0 +1,20 @@
+[
+  {
+    "id": "37-356-7542",
+    "title": "Sandwich",
+    "text": "Sandwich with smoked ham",
+    "image": "../img/Sandwich.png"
+  },
+  {
+    "id": "56-046-9540",
+    "title": "Snack",
+    "text": "Crackers with jelly",
+    "image": "../img/Snack.png"
+  },
+  {
+    "id": "59-113-4434",
+    "title": "Dessert",
+    "text": "Brownie with almonds and melted chocolate ",
+    "image": "../img/Dessert.png"
+  }
+]
