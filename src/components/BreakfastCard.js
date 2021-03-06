@@ -1,6 +1,5 @@
 import { css } from "@emotion/css";
 import { useState, useEffect } from "react";
-import RecipeImg from "../img/recipeOfTheDay.png";
 
 const BreakfastCard = () => {
   const [data, setData] = useState("");
