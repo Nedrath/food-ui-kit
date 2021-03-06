@@ -1,13 +1,13 @@
 import { css } from "@emotion/css";
 import BreakfastCard from "../components/BreakfastCard";
 import RecipeOfTheDay from "../components/RecipeOfTheDay";
+import Footer from "../components/Footer";
 
 const Home = () => {
-  const style_Grid = css`
+  const style_Wrapper = css`
     display: grid;
     justify-content: center;
-    width: 100vw;
-    height: 100%;
+    margin: auto;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   `;
   const style_Header = css`
@@ -17,6 +17,7 @@ const Home = () => {
   const style_Main = css`
     margin: auto;
     padding: 0 15px;
+    /* margin-bottom: 72px; */
   `;
   const style_Headline = css`
     display: flex;
@@ -28,23 +29,25 @@ const Home = () => {
       font-size: 1.5em;
       font-weight: 600;
     }
-    p {
+    ion-icon {
       color: orange;
+      font-size: 1.4em;
+      cursor: pointer;
     }
   `;
   return (
-    <div className={style_Grid}>
+    <div className={style_Wrapper}>
       <header className={style_Header}>
         <RecipeOfTheDay />
       </header>
       <main className={style_Main}>
         <div className={style_Headline}>
           <h2>Breakfast</h2>
-          <p>--></p>
+          <ion-icon name="arrow-forward"></ion-icon>
         </div>
         <BreakfastCard />
       </main>
-      <footer></footer>
+      <Footer />
     </div>
   );
 };
