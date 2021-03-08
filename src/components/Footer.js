@@ -11,9 +11,9 @@ const Footer = () => {
     width: 100%;
   `;
   return (
-    <footer className={style_Footer}>
+    <div className={style_Footer}>
       <Navigation />
-    </footer>
+    </div>
   );
 };
 

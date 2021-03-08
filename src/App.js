@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import { injectGlobal } from "@emotion/css";
 import Home from "./views/Home";
 import Splash from "./views/Splash";
+import RecipePage from "./views/RecipePage";
 
 injectGlobal`
 * {
@@ -17,6 +18,7 @@ const App = () => {
     <Router>
       <Splash path="/" />
       <Home path="/home" />
+      <RecipePage path="/recipies" />
     </Router>
   );
 };

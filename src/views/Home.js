@@ -47,7 +47,9 @@ const Home = () => {
         </div>
         <BreakfastCard />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
