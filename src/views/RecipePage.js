@@ -1,7 +1,7 @@
 import { css } from "@emotion/css";
 import Footer from "../components/Footer";
-import Recipe from "../components/Recipe";
 import Header from "../components/Header";
+import TimeAndPortions from '../components/TimeAndPortions'
 
 const RecipePage = () => {
   const style_Wrapper = css`
@@ -24,13 +24,13 @@ const RecipePage = () => {
   `;
   const style_Headline = css`
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
+    padding-top: 35px;
     padding-bottom: 10px;
     h2 {
+      text-align: center;
       font-size: 1.5em;
       font-weight: 600;
+      width: 100%;
     }
   `;
   return (
@@ -40,9 +40,18 @@ const RecipePage = () => {
       </header>
       <main className={style_Main}>
         <div className={style_Headline}>
-          <h2>Ingredients Recipe</h2>
+          <h2>
+            Ingredients{" "}
+            <span
+              className={css`
+                color: rgba(0, 0, 0, 0.479);
+              `}
+            >
+              Recipe
+            </span>{" "}
+          </h2>
         </div>
-        <Recipe />
+        <TimeAndPortions />
       </main>
       <Footer />
     </div>

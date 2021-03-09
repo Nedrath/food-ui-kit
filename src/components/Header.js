@@ -95,18 +95,15 @@ const Header = () => {
           `}
         >
           By
-          <span>
-            <p
-              className={css`
-                color: orange;
-                padding-left: 5px;
-              `}
-            >
-              Michael Bezot
-            </p>
+          <span
+            className={css`
+              color: orange;
+              padding-left: 5px;
+            `}
+          >
+            Michael Bezot
           </span>
         </p>
-
         <p className={style_Follow}>+Follow</p>
       </section>
     </div>
