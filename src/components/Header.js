@@ -36,6 +36,7 @@ const Header = () => {
     ion-icon {
       color: white;
       opacity: 0.4;
+
     }
   `;
   const style_Hero = css`

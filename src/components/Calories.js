@@ -1,9 +1,10 @@
 import { css } from "@emotion/css";
 
-const Calories = () => {
+const Calories = (props) => {
   const style_Grid = css`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 40px;
     /* gap: 45px; */
 
     p {
@@ -13,7 +14,8 @@ const Calories = () => {
   `;
   const style_Line = css`
     border-right: 1px solid rgba(0, 0, 0, 0.164);
-  `
+  `;
+
   return (
     <>
       <div className={style_Grid}>

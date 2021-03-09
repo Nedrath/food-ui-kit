@@ -1,7 +1,8 @@
 import { css } from "@emotion/css";
 import BreakfastCard from "../components/BreakfastCard";
 import RecipeOfTheDay from "../components/RecipeOfTheDay";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
+import Navigation from "../components/Navigation";
 
 const Home = () => {
   const style_Wrapper = css`
@@ -35,6 +36,14 @@ const Home = () => {
       cursor: pointer;
     }
   `;
+  const style_Footer = css`
+    background: white;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  `;
   return (
     <div className={style_Wrapper}>
       <header className={style_Header}>
@@ -47,8 +56,8 @@ const Home = () => {
         </div>
         <BreakfastCard />
       </main>
-      <footer>
-        <Footer />
+      <footer className={style_Footer}>
+        <Navigation />
       </footer>
     </div>
   );
