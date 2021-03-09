@@ -2,6 +2,7 @@ import { css } from "@emotion/css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import TimeAndPortions from '../components/TimeAndPortions'
+import Calories from '../components/Calories'
 
 const RecipePage = () => {
   const style_Wrapper = css`
@@ -21,6 +22,7 @@ const RecipePage = () => {
     background: white;
     border-top: 1px solid black;
     z-index: 50;
+    padding: 0px 25px;
   `;
   const style_Headline = css`
     display: flex;
@@ -52,6 +54,7 @@ const RecipePage = () => {
           </h2>
         </div>
         <TimeAndPortions />
+        <Calories />
       </main>
       <Footer />
     </div>

@@ -1,11 +1,11 @@
 import { css } from "@emotion/css";
 
-const Recipe = () => {
+const TimeAndPortions = () => {
   const style_Grid = css`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 25px;
+    padding: 15px 0px;
   `;
   const style_Time = css`
     color: orange;
@@ -36,4 +36,4 @@ const Recipe = () => {
   );
 };
 
-export default Recipe;
+export default TimeAndPortions;
