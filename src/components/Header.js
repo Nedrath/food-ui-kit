@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import { Link } from "@reach/router";
-import RecipeImgHero from "../img/recipeHeader.png";
+import RecipeHeroImg from "../img/recipeHeader.png";
 
 const Header = () => {
   const style_Header = css`
@@ -15,15 +15,20 @@ const Header = () => {
   `;
   const style_IconsBox = css`
     display: flex;
+    width: 100%;
     justify-content: space-between;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 35px;
+    position: absolute;
+    top: 0;
   `;
-  const style_HeroImg = css`
-    background-image: url(${RecipeImgHero});
-    width: 375px;
+  const style_Hero = css`
+    object-fit: cover;
+    opacity: 0.4;
     height: 525px;
+    width: 100vw;
+    position: relative;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   `;
@@ -41,15 +46,15 @@ const Header = () => {
 
   return (
     <div className={style_Header}>
-      <div className={style_HeroImg}>
-        <div className={style_IconsBox}>
-          <Link to="/home">
-            <ion-icon name="arrow-back"></ion-icon>
-          </Link>
-          <ion-icon name="heart-outline"></ion-icon>
-        </div>
-        <h1 className={style_Headline}>Swedish Meatballs</h1>
+      <img className={style_Hero} src={RecipeHeroImg} alt="food" />
+      <div className={style_IconsBox}>
+        <Link to="/home">
+          <ion-icon name="arrow-back"></ion-icon>
+        </Link>
+        <ion-icon name="heart-outline"></ion-icon>
       </div>
+      <h1 className={style_Headline}>Swedish Meatballs</h1>
+      {/* </div> */}
     </div>
   );
 };
