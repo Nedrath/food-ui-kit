@@ -7,7 +7,7 @@ const SplashScreen = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/home");
-    }, 3500);
+    }, 5000);
   }, []);
 
   const style_SplashImg = css`
