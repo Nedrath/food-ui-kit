@@ -1,5 +1,8 @@
 import { css } from "@emotion/css";
 // import { useState, useEffect } from "react";
+import SandwichImg from "../img/Sandwich.png";
+import CrackersImg from "../img/Snack.png";
+import DessertImg from "../img/Dessert.png";
 
 const BreakfastCard = () => {
   // const [data, setData] = useState("");
@@ -49,15 +52,27 @@ const BreakfastCard = () => {
     // );
     <article className={style_Wrapper}>
       <div className={style_Card}>
-        <img className={style_RecipeImg} src="../img/Sandwich.png" alt="" />
+        <img
+          className={style_RecipeImg}
+          src={SandwichImg}
+          alt="sandwich with smoked ham"
+        />
         <p className={style_Text}>Sandwich with smoked ham</p>
       </div>
       <div className={style_Card}>
-        <img className={style_RecipeImg} src="../img/Snack.png" alt="" />
+        <img
+          className={style_RecipeImg}
+          src={CrackersImg}
+          alt="crackers with jelly"
+        />
         <p className={style_Text}>Crackers with jelly</p>
       </div>
       <div className={style_Card}>
-        <img className={style_RecipeImg} src="../img/Dessert.png" alt="" />
+        <img
+          className={style_RecipeImg}
+          src={DessertImg}
+          alt="brownie with almonds"
+        />
         <p className={style_Text}>Brownie with almonds and melted chocolate</p>
       </div>
     </article>
