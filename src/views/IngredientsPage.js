@@ -1,8 +1,12 @@
 import { css } from "@emotion/css";
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
+import TimeAndPortions from "../components/TimeAndPortions";
+import Calories from "../components/Calories";
+import Ingredients from "../components/Ingredients";
 import Recipe from "../components/Recipe";
 import { Link } from "@reach/router";
+import { useState } from "react";
 
 const RecipePage = () => {
   const style_Wrapper = css`
@@ -25,22 +29,22 @@ const RecipePage = () => {
   const style_Headline = css`
     display: flex;
     padding-top: 35px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     width: 100%;
     justify-content: space-evenly;
   `;
   const style_Link = css`
     text-decoration: none;
     outline: none;
-    color: rgba(128, 128, 128, 0.479);
+    color: rgba(128, 128, 128, 0.459);
   `;
   const style_Active = css`
     text-align: center;
-    font-size: 1.5em;
-    font-weight: 600;
-    width: 100%;
-    color: black;
-  `;
+      font-size: 1.5em;
+      font-weight: 600;
+      width: 100%;
+      color: black;
+  `
   const style_Footer = css`
     background: white;
     position: sticky;
@@ -49,6 +53,7 @@ const RecipePage = () => {
     left: 0;
     /* width: 100%; */
   `;
+
   return (
     <div className={style_Wrapper}>
       <header className={style_Header}>
@@ -57,13 +62,15 @@ const RecipePage = () => {
       <main className={style_Main}>
         <div className={style_Headline}>
           <Link className={style_Link} to="/ingredients">
-            <h2>Ingredients</h2>
+            <h2 className={style_Active}>Ingredients</h2>
           </Link>
           <Link className={style_Link} to="/recipe">
-            <h2 className={style_Active}>Recipe</h2>
+            <h2>Recipe</h2>
           </Link>
         </div>
-        <Recipe />
+        <TimeAndPortions />
+        <Calories />
+        <Ingredients />
       </main>
       <footer className={style_Footer}>
         <Navigation />

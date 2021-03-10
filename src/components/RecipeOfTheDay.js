@@ -37,7 +37,7 @@ const RecipeOfTheDay = () => {
 
   return (
     data && (
-      <Link to="/recipies">
+      <Link to="/ingredients">
         <article className={style_RecipeWrapper}>
           <figure className={style_RecipeImg} />
           <h1 className={style_Headline}>{data[1].title}</h1>
