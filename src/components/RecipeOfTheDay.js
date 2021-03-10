@@ -1,19 +1,19 @@
 import { css } from "@emotion/css";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Link } from "@reach/router";
 import RecipeImg from "../img/recipeOfTheDay.png";
 
 const RecipeOfTheDay = () => {
-  const [data, setData] = useState("");
+  // const [data, setData] = useState("");
 
-  useEffect(() => {
-    fetch("../data/Images.json", {
-      method: "GET",
-    })
-      .then((response) => response.json())
-      .then((result) => setData(result))
-      .catch((err) => console.error(err));
-  }, []);
+  // useEffect(() => {
+  //   fetch("../data/Images.json", {
+  //     method: "GET",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((result) => setData(result))
+  //     .catch((err) => console.error(err));
+  // }, []);
 
   const style_RecipeImg = css`
     background-image: url(${RecipeImg});
@@ -36,15 +36,13 @@ const RecipeOfTheDay = () => {
   `;
 
   return (
-    data && (
       <Link to="/ingredients">
         <article className={style_RecipeWrapper}>
           <figure className={style_RecipeImg} />
-          <h1 className={style_Headline}>{data[1].title}</h1>
+          <h1 className={style_Headline}>Recipe of the Day</h1>
         </article>
       </Link>
     )
-  );
 };
 
 export default RecipeOfTheDay;
