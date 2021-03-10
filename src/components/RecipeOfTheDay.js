@@ -36,13 +36,13 @@ const RecipeOfTheDay = () => {
   `;
 
   return (
-      <Link to="/ingredients">
-        <article className={style_RecipeWrapper}>
-          <figure className={style_RecipeImg} />
-          <h1 className={style_Headline}>Recipe of the Day</h1>
-        </article>
-      </Link>
-    )
+    <Link to="/ingredients">
+      <article className={style_RecipeWrapper}>
+        <figure className={style_RecipeImg} />
+        <h1 className={style_Headline}>Recipe of the Day</h1>
+      </article>
+    </Link>
+  );
 };
 
 export default RecipeOfTheDay;

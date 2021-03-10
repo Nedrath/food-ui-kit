@@ -61,7 +61,7 @@ const RecipePage = () => {
       </header>
       <main className={style_Main}>
         <div className={style_Headline}>
-          <Link className={style_Link} to="/ingredients">
+          <Link className={style_Link} to="ingredients">
             <h2 className={style_Active}>Ingredients</h2>
           </Link>
           <Link className={style_Link} to="/recipe">

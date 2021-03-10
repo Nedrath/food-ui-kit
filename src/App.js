@@ -4,7 +4,7 @@ import { injectGlobal } from "@emotion/css";
 import Home from "./views/Home";
 import Splash from "./views/Splash";
 import RecipePage from "./views/RecipePage";
-import IngredientsPage from './views/IngredientsPage'
+import IngredientsPage from "./views/IngredientsPage";
 
 injectGlobal`
 * {
@@ -18,9 +18,9 @@ const App = () => {
   return (
     <Router>
       <Splash path="/" />
-      <Home path="/home" />
-      <IngredientsPage path="/ingredients" />
-      <RecipePage path="/recipe" />
+      <Home path="home" />
+      <IngredientsPage path="ingredients" />
+      <RecipePage path="recipe" />
     </Router>
   );
 };
