@@ -49,6 +49,7 @@ const RecipePage = () => {
     left: 0;
     /* width: 100%; */
   `;
+
   return (
     <div className={style_Wrapper}>
       <header className={style_Header}>
